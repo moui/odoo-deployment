@@ -11,10 +11,6 @@ echo "Installing Odoo..."
 
 sudo apt update
 
-# Install Git
-
-sudo apt install git -y
-
 # Install pip
 
 sudo apt install python3-pip -y
