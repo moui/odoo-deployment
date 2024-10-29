@@ -55,10 +55,19 @@ sudo apt install ./wkhtmltox_0.12.6.1-2.jammy_amd64.deb
 # Create the necessary directories if they don't already exist
 if [ ! -d "/opt/odoo" ]; then
     echo "Creating /opt/odoo directory..."
-    sudo mkdir -p /opt/odoo/odoo /opt/odoo/odoo-custom-addons
+    sudo mkdir -p /opt/odoo/odoo
     sudo chown -R odoo:odoo /opt/odoo
 else
     echo "/opt/odoo directory already exists. Skipping creation."
+fi
+
+# Create the custom addons directory
+if [ ! -d "/opt/odoo/odoo-custom-addons" ]; then
+    echo "Creating /opt/odoo/odoo-custom-addons directory..."
+    sudo mkdir -p /opt/odoo/odoo-custom-addons
+    sudo chown -R odoo:odoo /opt/odoo/odoo-custom-addons
+else
+    echo "/opt/odoo/odoo-custom-addons directory already exists. Skipping creation."
 fi
 
 # Clone the Odoo repository if it doesn't already exist, or update it if it does

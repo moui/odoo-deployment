@@ -16,7 +16,7 @@ sudo apt update
 sudo apt install git
 ```
 
-## Installing Odoo 17
+## Installing Odoo 18
 
 ### Clone this repository
 
