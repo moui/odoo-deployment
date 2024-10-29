@@ -1,4 +1,4 @@
-# Odoo 17 deployment on Ubuntu
+# Odoo 18 deployment on Ubuntu
 
 This script and configuration files are used to deploy Odoo 17 on Ubuntu. For testing purposes, I used Ubuntu 22.04 LTS in an AWS EC2 instance.
 
