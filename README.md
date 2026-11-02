@@ -55,9 +55,9 @@ Several values are hard-coded. Change them before running the script:
 | Same password, used by Odoo to connect | `odoo.conf`: `db_password` | `password` |
 | Odoo master (database manager) password | `odoo.conf`: `admin_passwd` | `admin` |
 | `postgres` superuser password | `deploy.sh`, the `ALTER USER postgres` line | `your_secure_password` |
-| Domain for the certificate | `deploy.sh`, the `certbot` line (`-d`) | `odoo.moui.dev` |
-| Let's Encrypt contact email | `deploy.sh`, the `certbot` line (`-m`) | `hola@moui.dev` |
-| Nginx `server_name` and certificate paths | `odoo-nginx.conf` | `odoo.moui.dev` |
+| Domain for the certificate | `deploy.sh`, the `certbot` line (`-d`) | `odoo.example.com` |
+| Let's Encrypt contact email | `deploy.sh`, the `certbot` line (`-m`) | `admin@example.com` |
+| Nginx `server_name` and certificate paths | `odoo-nginx.conf` | `odoo.example.com` |
 
 `db_password` in `odoo.conf` must match `PG_PASSWORD` in `pgsql.conf`.
 

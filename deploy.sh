@@ -124,7 +124,7 @@ sudo apt install nginx -y
 sudo apt install certbot python3-certbot-nginx -y
 
 # Obtain an SSL certificate (replace <your-domain> with your actual domain)
-sudo certbot --nginx -d odoo.moui.dev --non-interactive --agree-tos -m hola@moui.dev
+sudo certbot --nginx -d odoo.example.com --non-interactive --agree-tos -m admin@example.com
 
 # Copy the Nginx configuration file from the repo to the correct location
 if [ -f "/etc/nginx/sites-available/odoo" ]; then
